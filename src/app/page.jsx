@@ -1,10 +1,10 @@
 // pages/index.js
 
-import ParticlesBackground from '../components/TSparticles'; // Ensure this path is correct
+import ParticlesBackground from '../components/TSparticles';
 import ProjectsButton from '../components/projectsButton.jsx';
 import Title from './landing/title.jsx';
 import About from './landing/about.jsx';
-
+import Carousel from './projects/carousel';
 import './globals.css';
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
           <About/>
         </div>
       </div>
+      <Carousel/>
     </ParticlesBackground>
   );
 }
