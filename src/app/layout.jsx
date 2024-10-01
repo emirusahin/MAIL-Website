@@ -1,3 +1,4 @@
+import 'animate.css';f
 import './globals.css';
 // import { NextUIProvider } from '@nextui-org/react'; // Import NextUIProvider
 import Heading from './header/header';
