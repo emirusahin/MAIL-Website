@@ -11,7 +11,7 @@ export default function Navbar() {
               className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="white">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -22,20 +22,20 @@ export default function Navbar() {
           <ul
             tabIndex="0"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <Navitem href="#" label="About"/>
-            <Navitem href="#" label="Projects"/>
-            <Navitem href="#" label="Contact"/>
-            <Navitem href="#" label="Team"/>
+            <Navitem color="black" href="#" label="About"/>
+            <Navitem color="black" href="#" label="Projects"/>
+            <Navitem color="black" href="#" label="Contact"/>
+            <Navitem color="black" href="#" label="Team"/>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl  text-white">MAIL</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal flex"> 
-          <Navitem href="#" label="About"/>
-          <Navitem href="#" label="Projects"/>
-          <Navitem href="#" label="Contact"/>
-          <Navitem href="#" label="Team"/>
+          <Navitem color="white" href="#" label="About"/>
+          <Navitem color="white" href="#" label="Projects"/>
+          <Navitem color="white" href="#" label="Contact"/>
+          <Navitem color="white" href="#" label="Team"/>
         </ul>
       </div>
       <div className="navbar-end pr-8">
