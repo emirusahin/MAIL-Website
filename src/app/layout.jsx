@@ -1,4 +1,4 @@
-import 'animate.css';f
+import 'animate.css';
 import './globals.css';
 // import { NextUIProvider } from '@nextui-org/react'; // Import NextUIProvider
 import Heading from './header/header';
@@ -6,7 +6,7 @@ import Navbar from './header/header';
 
 export default function Layout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className='bg-black'>
         <body>
           <div className='bg-black'>
             <main>
