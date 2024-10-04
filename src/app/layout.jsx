@@ -1,5 +1,5 @@
 import 'animate.css';
-import './globals.css';
+import '../styles/globals.css';
 // import { NextUIProvider } from '@nextui-org/react'; // Import NextUIProvider
 import Heading from './header/header';
 import Navbar from './header/header';

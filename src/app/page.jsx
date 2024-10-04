@@ -1,12 +1,12 @@
 // pages/index.js
 'use client';
+import '../styles/globals.css';
 import ParticlesBackground from '../components/TSparticles';
 import ProjectsButton from '../components/projectsButton.jsx';
 import Title from './landing/title.jsx';
 import About from './landing/about.jsx';
 import Carousel from './projects/carousel';
 import TypedText from './landing/typedText';
-import './globals.css';
 import useWindowSize from './functions/useWindowWidth';
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
           {windowWidth > 500 && <About />}
           </div>
       </div>
+      <h1 className="font-Lora text-white">Home</h1>
       
       <Carousel/>
     </ParticlesBackground>
