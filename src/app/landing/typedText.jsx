@@ -6,7 +6,7 @@ import useWindowSize from '../functions/useWindowWidth';
 export default function TypedText() {
     const el = React.useRef(null);
     const { width: windowWidth } = useWindowSize();
-    
+
     React.useEffect(() => {
       const typed = new Typed(el.current, {
         strings: ['We are<br/>the best', 'We are<br/>McGill AI Lab^1500'],
@@ -21,20 +21,12 @@ export default function TypedText() {
         typed.destroy();
       };
     }, []);
-  
-    if (windowWidth > 500) {
-        return (
-        <div className="font-lora text-white text-9xl leading-none text-center p-0">
+
+    return (
+        <div className={`font-lora text-white leading-none text-center p-0 ${
+                windowWidth > 500 ? 'text-9xl' : 'text-7xl'
+            }`}>
             <span ref={el} />
         </div>
         );
-    } else {
-        return (
-            <div className={`font-lora text-white leading-none text-center p-0 ${
-                    windowWidth > 500 ? 'text-9xl' : 'text-7xl'
-                }`}>
-                <span ref={el} />
-            </div>
-            );
-    }
 }
