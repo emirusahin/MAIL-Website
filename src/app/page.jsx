@@ -1,17 +1,15 @@
 // pages/index.js
 'use client';
 import '../styles/globals.css';
+import Spacer from '../components/spacer'; 
 import ParticlesBackground from '../components/TSparticles';
-import ProjectsButton from '../components/projectsButton.jsx';
-import Title from './landing/title.jsx';
 import About from './landing/about.jsx';
-import Carousel from './projects/carousel';
+import ProjectsSection from './projects/projectsSection';
 import TypedText from './landing/typedText';
-import useWindowSize from './functions/useWindowWidth';
+import TeamSection from './team/team';
+
 
 export default function Home() {
-  const { width: windowWidth } = useWindowSize();
-
   return (
     <ParticlesBackground>
       <div className="flex flex-col items-center h-screen relative pt-40">
@@ -19,8 +17,15 @@ export default function Home() {
           <TypedText/>
           <About />
           </div>
-      </div>      
-      <Carousel/>
+      </div>
+      <div id="projects"> {/* Ensure this ID matches */}
+        <ProjectsSection/>
+      </div>
+      <Spacer/>
+      <div id="team"> {/* Ensure this ID matches */}
+        <TeamSection/>
+      </div>
+      
     </ParticlesBackground>
   );
 }
