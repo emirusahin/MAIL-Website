@@ -6,7 +6,7 @@ import ParticlesBackground from '../components/TSparticles';
 import About from './landing/about.jsx';
 import ProjectsSection from './projects/projectsSection';
 import TypedText from './landing/typedText';
-import TeamSection from './team/team';
+import TeamSection from './team/teamSection';
 
 
 export default function Home() {
