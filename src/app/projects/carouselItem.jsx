@@ -1,5 +1,5 @@
 'use client';
-import '../globals.css';
+import '../../styles/globals.css';
 import { useState, useEffect } from 'react';
 
 export default function CarouselItem({ title, date, image }) {
