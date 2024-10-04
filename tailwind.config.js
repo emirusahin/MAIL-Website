@@ -29,10 +29,11 @@ module.exports = {
         '10xl': '13rem',  // Change this value to your desired size
       },
       fontFamily: {
-        'Inter': ['Inter', 'serif'],
-        'Lora': ['Lora'],
-        'h3': ['ui-monospace'],
-        'p': ['Oswald'],
+        Inter: ['Inter', 'serif'],
+        Lora: ['Lora'],
+        techy: ['Sixtyfour Convergence'],
+        // 'h3': ['ui-monospace'],
+        // 'p': ['Oswald'],
       },
     },
   },
