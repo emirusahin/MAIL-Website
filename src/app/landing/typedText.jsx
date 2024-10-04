@@ -23,10 +23,9 @@ export default function TypedText() {
     }, []);
 
     return (
-        <div className={`font-lora text-white leading-none text-center p-0 ${
-                windowWidth > 500 ? 'text-9xl' : 'text-7xl'
-            }`}>
+        <div className="font-lora text-white leading-tight text-center p-0 text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
             <span ref={el} />
         </div>
-        );
+    );
+    
 }
