@@ -1,11 +1,17 @@
-import Link from 'next/link';
+'use client';
 
-export default function Navitem({ label, href, color }) {
+const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+};
+
+export default function Navitem({ label, id, color }) {
     return (
         <li>
-            <Link href={href} className={`text-xl text-${color} lg:px-5`}>
+            <button 
+                onClick={() => {scrollToSection(id);}} className={`text-xl text-${color} lg:px-5`}>
                 {label}
-            </Link>
+            </button>
         </li>
     );
 }
