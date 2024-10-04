@@ -1,0 +1,254 @@
+[
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Alice Smith",
+        "role": "Frontend Developer",
+        "year": "U2",
+        "major": "Philosophy",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Bob Johnson",
+        "role": "Backend Developer",
+        "year": "U0",
+        "major": "Comp Sci",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Charlie Brown",
+        "role": "Full Stack Developer",
+        "year": "U1",
+        "major": "International Development",
+        "image": "/images/major-predictor-cover.png"
+    },
+    {
+        "name": "Dana White",
+        "role": "UI/UX Designer",
+        "year": "U3",
+        "major": "Business",
+        "image": "/images/major-predictor-cover.png"
+    }
+]
