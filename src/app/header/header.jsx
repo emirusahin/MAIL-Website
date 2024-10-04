@@ -22,20 +22,20 @@ export default function Navbar() {
           <ul
             tabIndex="0"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <Navitem color="black" href="#" label="About"/>
+            {/* <Navitem color="black" href="#" label="About"/>
             <Navitem color="black" href="#" label="Projects"/>
             <Navitem color="black" href="#" label="Contact"/>
-            <Navitem color="black" href="#" label="Team"/>
+            <Navitem color="black" href="#" label="Team"/> */}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl  text-white">MAIL</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal flex"> 
-          <Navitem color="white" href="#" label="About"/>
-          <Navitem color="white" href="#" label="Projects"/>
-          <Navitem color="white" href="#" label="Contact"/>
-          <Navitem color="white" href="#" label="Team"/>
+        <ul className="menu menu-horizontal flex">
+          <Navitem color="white" id="#" label="About"/>
+          <Navitem color="white" id="projects" label="Projects"/>
+          <Navitem color="white" id="#" label="Contact"/>
+          <Navitem color="white" id="team" label="Team"/>
         </ul>
       </div>
       <div className="navbar-end pr-8">
