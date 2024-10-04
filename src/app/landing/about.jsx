@@ -13,7 +13,7 @@ export default function About(){
         setAnimation('animate__animated animate__hinge')
     };
     return (
-        <div onClick={handleClick} className={`text-md ${animation}`}>{ text }</div>
+        <div onClick={handleClick} className={`text-md ${animation} hidden sm:block`}>{ text }</div>
     );
 
 }

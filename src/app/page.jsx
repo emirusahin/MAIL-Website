@@ -17,11 +17,9 @@ export default function Home() {
       <div className="flex flex-col items-center h-screen relative pt-40">
         <div className="w-1/2 text-center text-white">
           <TypedText/>
-          {windowWidth > 500 && <About />}
+          <About />
           </div>
-      </div>
-      <h1 className="font-Lora text-white">Home</h1>
-      
+      </div>      
       <Carousel/>
     </ParticlesBackground>
   );
