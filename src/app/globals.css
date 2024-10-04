@@ -11,20 +11,19 @@
     box-sizing: border-box;
 }
 
-:root {
-    --glass-blur: 2px; /* Adjust the blur value */
-    --glass-opacity: 0.8; /* Adjust the glass background opacity */
-    --glass-border-opacity: 0; /* Opacity for the border */
-    --glass-reflex-degree: 0; /* Angle of the glass reflex */
-    --glass-reflex-opacity: 0; /* Opacity of the reflex */
-    --glass-text-shadow-opacity: 0; /* Opacity of the text shadow */
-  }
-
-.glassmorph {
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 0 10px 0.5px rgb(138, 138, 138);
+.glassMorph {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 0 10px 0.5px rgb(152, 152, 152);
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 10px;
 }
 
+.highlight {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255,255,255,0.4), transparent);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
