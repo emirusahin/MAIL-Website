@@ -10,12 +10,10 @@ export default function Title() {
             setWindowWidth(window.innerWidth);
             window.addEventListener('resize', handleResize);
 
-            // Cleanup event listener on component unmount
             return () => window.removeEventListener('resize', handleResize);
         }
     }, []);
 
-    // before client mount)
     if (windowWidth === null) {
         return null;
     }
