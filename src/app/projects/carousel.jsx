@@ -1,4 +1,4 @@
-import CarouselItem from "./carouselItem"
+import CarouselItem from "./carouselItem";
 
 export default function Carousel() {
     return (
@@ -11,11 +11,5 @@ export default function Carousel() {
             <CarouselItem title="Student Major Predictor" date="Sept 12. 2024" image="/images/major-predictor-cover.png"/>
             <CarouselItem title="Student Major Predictor" date="Sept 12. 2024" image="/images/major-predictor-cover.png"/>
             <CarouselItem title="Student Major Predictor" date="Sept 12. 2024" image="/images/major-predictor-cover.png"/>
-            
-            {/* <div className="carousel-item">
-                <img
-                src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-                className="rounded-box" />
-            </div> */}
         </div> );
 }
