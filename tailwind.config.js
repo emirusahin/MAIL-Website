@@ -24,6 +24,9 @@ module.exports = {
         foreground: "var(--foreground)",
         'gray': '#D3D3D3',
         'mcgill': '#ed1b2f',
+        'dark': '#040019',
+        'lilac': '#ae86ff',
+        'purple': '#725aa3',
       },
       fontSize: {
         '10xl': '13rem',  // Change this value to your desired size

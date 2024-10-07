@@ -1,5 +1,6 @@
 import React from 'react';
 import teamMembers from '../../data/teamMembers.json';
+import Link from 'next/link';
 
 
 function ArrowRow({teamMembers}) {
@@ -20,6 +21,8 @@ function ArrowRow({teamMembers}) {
 
 export default function TeamSection() {
       return (
+        <>
+        <Link href="/team" className="text-white text-9xl">CLICK HERE</Link>
         <div className="flex flex-row items-center my-10">
             <div className="flex flex-col justify-center pl-8 w-1/4">
                 <h1 className="font-Inter text-white sm:text-5xl lg:text-10xl text-center">The<br />Team</h1>
@@ -48,6 +51,7 @@ export default function TeamSection() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

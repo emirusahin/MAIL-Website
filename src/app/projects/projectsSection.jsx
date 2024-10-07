@@ -14,5 +14,5 @@ export default function ProjectsSection() {
                 <CarouselItem title="Student Major Predictor" date="Sept 12. 2024" image="/images/major-predictor-cover.png"/>
             </div> 
         </>
-        );
+    );
 }

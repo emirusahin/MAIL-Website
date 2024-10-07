@@ -18,11 +18,11 @@ export default function Home() {
           <About />
           </div>
       </div>
-      <div id="projects"> {/* Ensure this ID matches */}
+      <div id="projects">
         <ProjectsSection/>
       </div>
       <Spacer/>
-      <div id="team"> {/* Ensure this ID matches */}
+      <div id="team">
         <TeamSection/>
       </div>
       

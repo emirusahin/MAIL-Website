@@ -28,7 +28,7 @@ export default function Navbar() {
             <Navitem color="black" href="#" label="Team"/> */}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl  text-white">MAIL</a>
+        <a className="btn btn-ghost text-xl text-white" href="/">MAIL</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal flex">

@@ -6,9 +6,9 @@ import Navbar from './header/header';
 
 export default function Layout({ children }) {
   return (
-    <html lang="en" className='bg-black'>
+    <html lang="en" className='bg-dark'>
         <body>
-          <div className='bg-black'>
+          <div className='bg-blue'>
             <main>
             <Navbar/>
               {children}
