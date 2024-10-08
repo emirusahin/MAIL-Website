@@ -28,7 +28,7 @@ export default function Navbar() {
             <Navitem color="black" href="#" label="Team"/> */}
           </ul>
         </div>
-        <a href="/" className="flex justify-center items-center h-full">
+        <a href="/" className="flex justify-center items-center h-full px-4">
             <div className="flex flex-col justify-center items-center">
               <div className="text-white text-2xl font-Lora leading-tight">McGill</div>  
               <div className="text-white text-xl font-Lora leading-tight">AI Lab</div> 

@@ -1,4 +1,5 @@
 import teamMembers from '../../data/teamMembers.json';
+import Image from 'next/image';
 
 export default function Team() {
     return (
@@ -10,7 +11,7 @@ export default function Team() {
                         <div 
                             key={index} 
                             className="bg-gray-800 text-white rounded-lg p-4 w-80">
-                            <img 
+                            <Image 
                                 src={member.image} 
                                 alt={member.name} 
                                 className="w-full h-64 object-cover rounded-lg mb-4" 
