@@ -28,7 +28,14 @@ export default function Navbar() {
             <Navitem color="black" href="#" label="Team"/> */}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-white" href="/">MAIL</a>
+        <a href="/" className="flex justify-center items-center h-full">
+            <div className="flex flex-col justify-center items-center">
+              <div className="text-white text-2xl font-Lora leading-tight">McGill</div>  
+              <div className="text-white text-xl font-Lora leading-tight">AI Lab</div> 
+            </div>
+        </a>
+
+        
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal flex">
@@ -39,7 +46,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end pr-8">
-        <a className="btn text-lg">Join</a>
+      <a href="#" className="text-white text-lg border border-white px-6 py-2 cursor-pointer">Join</a>
       </div>
     </div>
   );
