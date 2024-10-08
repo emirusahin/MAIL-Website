@@ -13,12 +13,6 @@ export default function TypedText() {
         typeSpeed: 60,
         backSpeed: 100,
         backDelay: 1500,
-        onBegin: function(self) {
-            // Add a strong purple glow to the typing cursor
-              self.cursor.style.boxShadow = '0px 0px 15px 5px rgba(128, 0, 128, 0.75)'; // Strong purple glow
-              self.cursor.style.color = 'rgba(128, 0, 128, 0.9)'; // Dark purple color for the cursor
-            
-          },
         onComplete: function(self) { self.cursor.remove() }
       });
   
