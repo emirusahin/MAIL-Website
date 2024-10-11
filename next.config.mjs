@@ -1,9 +1,9 @@
-/** @type {import('next').NextConfig} */
-const { withSitemap } = require('next-sitemap');
+// next.config.mjs
+import { withSitemap } from 'next-sitemap';
 
 const nextConfig = {
-  reactStrictMode: true, // Optional: enables React's Strict Mode
+  reactStrictMode: true,
   // Other Next.js configuration options can go here
 };
 
-module.exports = withSitemap(nextConfig);
+export default withSitemap(nextConfig);
