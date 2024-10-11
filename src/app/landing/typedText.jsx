@@ -1,11 +1,9 @@
 'use client';
 import Typed from 'typed.js';
 import React from 'react';
-import useWindowSize from '../functions/useWindowWidth';
 
 export default function TypedText() {
     const el = React.useRef(null);
-    const { width: windowWidth } = useWindowSize();
 
     React.useEffect(() => {
       const typed = new Typed(el.current, {
