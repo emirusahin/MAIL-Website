@@ -14,13 +14,6 @@
     "description": "A tool designed to scrape data from various websites for research purposes, featuring a user-friendly interface."
   },
   {
-    "id": "portfolio-website",
-    "title": "Personal Portfolio Website",
-    "date": "Oct 3, 2024",
-    "image": "/images/major-predictor-cover.png",
-    "description": "A responsive portfolio website showcasing my projects, skills, and experience in web development."
-  },
-  {
     "id": "game-development-project",
     "title": "Game Development Project",
     "date": "Oct 10, 2024",

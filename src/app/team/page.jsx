@@ -11,11 +11,15 @@ export default function Team() {
                         <div 
                             key={index} 
                             className="bg-gray-800 text-white rounded-lg p-4 w-80">
-                            <Image 
-                                src={member.image} 
-                                alt={member.name} 
-                                className="w-full h-64 object-cover rounded-lg mb-4" 
-                            />
+                            <div className="relative w-full h-64 mb-4">
+                                <Image 
+                                    src={member.image} 
+                                    alt={member.name} 
+                                    className="object-cover rounded-lg" 
+                                    layout="fill" 
+                                    objectFit="cover" 
+                                />
+                            </div>
                             <h3 className="text-xl font-semibold">{member.name}</h3>
                             <p className="text-sm">{member.year} {member.major}</p>
                             <p className="text-sm">{member.role}</p>
