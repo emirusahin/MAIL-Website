@@ -1,6 +1,7 @@
 // pages/index.js
 'use client';
 import '../styles/globals.css';
+import 'hover.css/css/hover-min.css';
 import Spacer from '../components/spacer'; 
 import ParticlesBackground from '../components/TSparticles';
 import About from './landing/about.jsx';
