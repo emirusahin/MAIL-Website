@@ -1,4 +1,4 @@
-import CarouselItem from "./carouselItem";
+import CarouselItem from "./projectItem";
 import projectsData from '../../data/projectsData.json';
 import AnimateOnViewWrapper from "@/components/animateOnViewWrapper";
 import 'animate.css';
