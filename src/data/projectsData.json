@@ -4,21 +4,87 @@
     "title": "Student Major Predictor",
     "date": "Sept 12, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "A project utilizing machine learning to predict students' potential majors based on their interests and academic performance."
+    "description": "A project utilizing machine learning to predict students' potential majors based on their interests and academic performance.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "web-scraping-tool",
     "title": "Web Scraping Tool",
     "date": "Oct 1, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "A tool designed to scrape data from various websites for research purposes, featuring a user-friendly interface."
+    "description": "A tool designed to scrape data from various websites for research purposes, featuring a user-friendly interface.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "game-development-project",
     "title": "Game Development Project",
     "date": "Oct 10, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "An interactive game built using Unity, aimed at providing educational content in an engaging format."
+    "description": "An interactive game built using Unity, aimed at providing educational content in an engaging format.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "data-visualization-tool",
@@ -32,34 +98,144 @@
     "title": "Chatbot Development",
     "date": "Oct 20, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "A conversational chatbot developed using NLP techniques, aimed at enhancing customer service experiences."
+    "description": "A conversational chatbot developed using NLP techniques, aimed at enhancing customer service experiences.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "mobile-app-development",
     "title": "Mobile App Development",
     "date": "Oct 25, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "A mobile application designed to help users track their fitness goals and progress effectively."
+    "description": "A mobile application designed to help users track their fitness goals and progress effectively.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "machine-learning-model",
     "title": "Machine Learning Model",
     "date": "Oct 30, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "A predictive model built using Python and TensorFlow to analyze and forecast trends in data."
+    "description": "A predictive model built using Python and TensorFlow to analyze and forecast trends in data.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "e-commerce-website",
     "title": "E-commerce Website",
     "date": "Nov 5, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "An online shopping platform built with a focus on user experience and security for transactions."
+    "description": "An online shopping platform built with a focus on user experience and security for transactions.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   },
   {
     "id": "blockchain-experiment",
     "title": "Blockchain Experiment",
     "date": "Nov 10, 2024",
     "image": "/images/major-predictor-cover.png",
-    "description": "An exploration of blockchain technology for secure transactions and smart contracts."
+    "description": "An exploration of blockchain technology for secure transactions and smart contracts.",
+    "timeline": [
+      {
+        "event": "Collect Data",
+        "date": "Oct 1, 2024",
+        "description": "Collected data by taking pictures of people who gave us their consent."
+      },
+      {
+        "event": "Clean Data",
+        "date": "Oct 2, 2024",
+        "description": "Make all the data into the same format and crop."
+      },
+      {
+        "event": "Train Model",
+        "date": "Oct 4, 2024",
+        "description": "Fit the model to the training data."
+      },
+      {
+        "event": "Validate Model",
+        "date": "Oct 8, 2024",
+        "description": "Check the model's performance using a validation set."
+      }
+    ]
   }
 ]

@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   
   return (
     <html lang="en" className='bg-black'>
-        <CSPostHogProvider>
+        {/* <CSPostHogProvider> */}
           <body>
             <div className='bg-blue'>
               <main>
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
               </main>
             </div>
           </body>
-        </CSPostHogProvider>
+        {/* </CSPostHogProvider> */}
     </html>
 
   );

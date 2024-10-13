@@ -7,10 +7,11 @@ export default function TypedText() {
 
     React.useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['We are<br/>the best', 'We are<br/>McGill AI Lab^1500'],
+        // strings: ['We are<br/>the best', 'We are<br/>McGill AI Lab^1500'],
+        strings: ['We are innovators', 'We are passionate', 'We are the next generation', 'We are McGill AI Lab^1500'],
         typeSpeed: 60,
-        backSpeed: 100,
-        backDelay: 1500,
+        backSpeed: 110,
+        backDelay: 700,
         onComplete: function(self) { self.cursor.remove() }
       });
   
@@ -20,7 +21,7 @@ export default function TypedText() {
     }, []);
 
     return (
-        <div className="font-lora text-white leading-tight text-center p-0 text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
+        <div className="font-lora text-white leading-tight text-center p-0 hvr-grow-rotate text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
             <span ref={el} />
         </div>
     );

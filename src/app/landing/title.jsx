@@ -20,7 +20,7 @@ export default function Title() {
 
     if (windowWidth > 500) {
         return (
-            <h1 className="font-Lora text-white text-9xl leading-none text-center p-0 shadow-2xl">
+            <h1 className="font-Lora text-white text-7xl leading-none text-center p-0 shadow-2xl">
                 We are<br />McGill AI Lab
             </h1>
         );

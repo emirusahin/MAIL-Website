@@ -8,7 +8,7 @@ export default function TeamSection() {
         <AnimateOnViewWrapper>
             <a href="/team" className="flex flex-row items-center my-10 cursor-default">
                 <div className="flex flex-col justify-center pl-8 w-1/2 cursor-default">
-                    <h1 className="font-Inter text-white sm:text-5xl lg:text-10xl text-center cursor-pointer">
+                    <h1 className="font-Inter text-white text-4xl sm:text-7xl md:text-8xl lg:text-9xl text-center cursor-pointer">
                     The<br />Team
                     </h1>
                 </div>
