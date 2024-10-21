@@ -3,7 +3,11 @@ import Image from 'next/image';
 
 export default async function ProjectPage({ params }) {
     const projectDetails = await getProjectDetails(params.projectID);
-    const projectTimeline = projectDetails.timeline // Array of timeline json elements
+    console.log(projectDetails)
+    const projectTimeline = projectDetails?.timeline || [];
+    if (!projectDetails) {
+        return <div>Project not found</div>; // Handle undefined project details gracefully
+    }
     return (
         <>
             <div className='flex flex-col items-center justify-center pt-4'>
@@ -11,12 +15,6 @@ export default async function ProjectPage({ params }) {
                 <div className="text-white text-xl">{projectDetails.date}</div>
             </div>
             <div className=''>
-                {/* <div className='w-64 h-64'>
-                    <Image className="object-cover" src={'/images/major-predictor-cover.png'}
-                                    layout="fill" 
-                                    objectFit="cover" 
-                                />
-                </div> */}
                 <p className='text-m text-white'>{projectDetails.description}</p>
             </div>
             <div className='flex flex-col pt-16 pl-4'>
@@ -38,9 +36,13 @@ export default async function ProjectPage({ params }) {
 }
 
 
-async function getProjectDetails(projectID) {
-    const projectDetails = await projectsData.find(
+function getProjectDetails(projectID) {
+    const projectDetails = projectsData.find(
         project => project.id === String(projectID)
     );
+    if (!projectDetails) {
+        throw new Error(`Project with ID ${projectID} not found`);
+    }
     return projectDetails;
 }
+
