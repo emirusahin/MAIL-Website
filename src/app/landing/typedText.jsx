@@ -21,7 +21,7 @@ export default function TypedText() {
     }, []);
 
     return (
-        <div className="font-lora text-white leading-tight text-center p-0 hvr-grow-rotate text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
+        <div className="font-lora text-white leading-tight text-center p-0 pb-4 hvr-grow-rotate text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
             <span ref={el} />
         </div>
     );
