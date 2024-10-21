@@ -16,6 +16,7 @@ export default function ProjectsSection() {
                             title={project.title} 
                             date={project.date} 
                             image={project.image} 
+                            clickable={project.clickable}
                             key={project.id} 
                         />
                     ))}
