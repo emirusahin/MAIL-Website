@@ -46,7 +46,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end pr-8">
-        <a href="#" className="text-white text-lg border border-white px-6 py-2 cursor-pointer hvr-sink">Join</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJkzj-gXw2ptXYBc-uF9M-5a1jbB5e3QfevoujqSAYJeA-yw/viewform" className="text-white text-lg border border-white px-6 py-2 cursor-pointer hvr-sink">Join</a>
       </div>
     </div>
   );
