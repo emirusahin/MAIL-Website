@@ -7,9 +7,12 @@ import Navbar from './header/header';
 export default function Layout({ children }) {
   
   return (
-    <html lang="en" className='bg-black'>
+    <>
+
+      <html lang="en" className='bg-black'>
         {/* <CSPostHogProvider> */}
           <body>
+          <link rel="icon" href="/images/favicon.ico" />
             <div className='bg-blue'>
               <main>
               <Navbar/>
@@ -19,6 +22,8 @@ export default function Layout({ children }) {
           </body>
         {/* </CSPostHogProvider> */}
     </html>
+    </>
+    
 
   );
 }
