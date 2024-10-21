@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex flex-col items-center h-screen relative pt-64">
           <div className="w-1/2 text-center text-white">
             <TypedText/>
-            {/* <About /> */}
+            <About/>
             </div>
         </div>
         <div id="projects">
