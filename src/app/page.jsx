@@ -33,9 +33,9 @@ export default function Home() {
           <ProjectsSection/>
         </div>
         <Spacer/>
-        <div id="team">
+        {/* <div id="team">
           <TeamSection/>
-        </div>
+        </div> */}
         
       </ParticlesBackground>
     </>

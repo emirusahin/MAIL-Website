@@ -42,7 +42,7 @@ export default function Navbar() {
           <Navitem color="white" id="#" label="About"/>
           <Navitem color="white" id="projects" label="Projects"/>
           <Navitem color="white" id="#" label="Contact"/>
-          <Navitem color="white" id="team" label="Team"/>
+          {/* <Navitem color="white" id="team" label="Team"/> */}
         </ul>
       </div>
       <div className="navbar-end pr-8">
