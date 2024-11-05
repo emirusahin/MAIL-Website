@@ -8,7 +8,8 @@ export default function TypedText() {
     React.useEffect(() => {
       const typed = new Typed(el.current, {
         // strings: ['We are<br/>the best', 'We are<br/>McGill AI Lab^1500'],
-        strings: ['We are innovators', 'We are passionate', 'We are the next generation', 'We are McGill AI Lab^1500'],
+        // strings: ['We are innovators', 'We are passionate', 'We are the next generation', 'We are McGill AI Lab^1500'],
+        strings: ['We are McGill AI Lab'],
         typeSpeed: 60,
         backSpeed: 110,
         backDelay: 700,
