@@ -29,9 +29,9 @@ export default function Home() {
             <About/>
             </div>
         </div>
-        <div id="projects">
+        {/* <div id="projects">
           <ProjectsSection/>
-        </div>
+        </div> */}
         <Spacer/>
         {/* <div id="team">
           <TeamSection/>
