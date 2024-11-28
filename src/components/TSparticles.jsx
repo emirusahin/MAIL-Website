@@ -43,11 +43,11 @@ const ParticlesBackground = ({ children }) => {
                                 value: 100
                             },
                             color: {
-                                value: "#FFFFFF"
+                                value: "#000000"
                             },
                             links: {
                                 color: {
-                                    value: "#FFFFFF"
+                                    value: "#000000"
                                 },
                                 enable: true,
                                 opacity: 0.5

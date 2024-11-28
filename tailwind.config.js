@@ -27,6 +27,7 @@ module.exports = {
         'dark': '#040019',
         'lilac': '#ae86ff',
         'purple': '#725aa3',
+        'offwhite': '#F8F7F2'
       },
       fontSize: {
         '10xl': '13rem',  // Change this value to your desired size

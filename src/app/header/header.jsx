@@ -30,8 +30,8 @@ export default function Navbar() {
         </div> */}
         <a href="/" className="flex justify-center items-center h-full pt-1 px-4 hvr-grow-rotate">
             <div className="flex flex-col justify-center items-center">
-              <div className="text-white text-2xl font-Lora leading-tight">McGill</div>  
-              <div className="text-white text-xl font-Lora leading-tight">AI Lab</div> 
+              <div className="text-black text-2xl font-Lora leading-tight">McGill</div>  
+              <div className="text-black text-xl font-Lora leading-tight">AI Lab</div> 
             </div>
         </a>
 
@@ -39,14 +39,14 @@ export default function Navbar() {
       </div>
       <div className="hidden lg:flex">
         <ul className=" flex">
-          <Navitem color="white" id="#" label="About"/>
-          <Navitem color="white" id="projects" label="Projects"/>
-          <Navitem color="white" id="#" label="Contact"/>
+          <Navitem color="black" id="#" label="About"/>
+          <Navitem color="black" id="projects" label="Projects"/>
+          <Navitem color="black" id="#" label="Contact"/>
           {/* <Navitem color="white" id="team" label="Team"/> */}
         </ul>
       </div>
       <div className="navbar-end pr-8">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJkzj-gXw2ptXYBc-uF9M-5a1jbB5e3QfevoujqSAYJeA-yw/viewform" className="text-white text-lg border border-white px-6 py-2 cursor-pointer hvr-sink">Join</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJkzj-gXw2ptXYBc-uF9M-5a1jbB5e3QfevoujqSAYJeA-yw/viewform" className="text-black text-lg border border-black px-6 py-2 cursor-pointer hvr-sink">Join</a>
       </div>
     </div>
   );

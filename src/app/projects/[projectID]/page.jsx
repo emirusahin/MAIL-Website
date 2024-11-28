@@ -1,38 +1,46 @@
 import projectsData from '../../../data/projectsData.json' assert { type: 'json' };
-import Image from 'next/image';
+import CodeBlock from './CodeBlock';
+import React from 'react';
+import ReactMarkdown from "react-markdown";
 
 export default async function ProjectPage({ params }) {
-    const projectDetails = await getProjectDetails(params.projectID);
-    console.log(projectDetails)
-    const projectTimeline = projectDetails?.timeline || [];
-    if (!projectDetails) {
-        return <div>Project not found</div>; // Handle undefined project details gracefully
-    }
+    const projectID = (await params).projectID
+
+    const projectDetails = await getProjectDetails(projectID);
+    const notebookData = projectDetails.notebookURL ? await getNotebook(projectDetails.notebookURL) : null;
+
     return (
         <>
-            <div className='flex flex-col items-center justify-center pt-4'>
-                <div className="text-white text-7xl pb-4">{projectDetails.title}</div>
-                <div className="text-white text-xl">{projectDetails.date}</div>
-            </div>
-            <div className=''>
-                <p className='text-m text-white'>{projectDetails.description}</p>
-            </div>
-            <div className='flex flex-col pt-16 pl-4'>
-                {/* <h1 className='text-white'>HELLO</h1> */}
-                {projectTimeline.map((event, index) =>
-                    <div className={`flex align-center ${index % 2 === 0 ? "justify-start pl-1 text-right" : "justify-end pr-1"}`} key={index}>
-                        {/* <Image className="absolute left-1/2" src="/images/checkmark.png" width={20} height={20} ></Image> */}
-                        <div className={`w-1/2 border-white p-4 ${index % 2 === 0 ? "border-r-4" : "border-l-4"}`}>
-                            <div className="text-l text-white pr-1 pl-1">{event.date}</div>
-                            <div className="text-2xl text-white font-bold">{event.event}</div>
-                            <div className="text-m text-white">{event.description}</div>
-                        </div>
-                    </div>
-                )}
-                
+            <div className='flex justify-center items-center text-6xl text-black'>{projectDetails.title}</div>
+            <h2 className='text-xl text-black'>{projectDetails.date}</h2>
+            <div className='px-36'>
+                {notebookData && notebookData.cells.map((cell, index) => {
+                    // Check the type of cell (code or markdown)
+                    if (cell.cell_type === 'markdown') {
+                        return (
+                            <div key={index} className='markdown'>
+                                <ReactMarkdown>
+                                    {cell.source.join(' ')}
+                                </ReactMarkdown>
+
+                                
+                            </div>
+                        );
+                    }
+
+                    if (cell.cell_type === 'code') {
+                        return (
+                            <div key={index}>
+                                <CodeBlock>{cell.source.join('')}</CodeBlock>
+                            </div>
+                        );
+                    }
+
+                    return null; // Ignore cell types other then markdown and code
+                })}
             </div>
         </>
-    );
+    )
 }
 
 
@@ -46,3 +54,25 @@ function getProjectDetails(projectID) {
     return projectDetails;
 }
 
+async function getNotebook(notebookURL) {
+    const notebookRes = await fetch(notebookURL);
+    const notebook = notebookRes.json()
+    return notebook
+}
+
+
+
+{/* <div className='px-36 pt-4'>
+                <p>We begin by taking the raw text of the article...</p>
+                <CodeBlock>t_article = tokenize_article(article)</CodeBlock>
+                <p>Now, we’ve got our article split into individual words...</p>
+                <CodeBlock>l_article = lowercase(t_article)</CodeBlock>
+                <p>With the text all lowercased...</p>
+                <CodeBlock>r_article = remove_stopwords(l_article)</CodeBlock>
+                <p>Now that we’ve reduced the article...</p>
+                <CodeBlock>la_article = lemmatization(r_article)</CodeBlock>
+                <p>Next, we need to tidy up the text...</p>
+                <CodeBlock>re_article = remove_punctuation(la_article)</CodeBlock>
+                <p>Now that we’ve processed the article...</p>
+                <CodeBlock>model = Word2Vec.load("cnn_w2v.model")</CodeBlock>
+            </div> */}

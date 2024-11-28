@@ -4,30 +4,27 @@
     "id": "student-major-predictor",
     "title": "Student Major Predictor",
     "date": "Sept 12, 2024",
-    "image": "/images/major-predictor-cover.png",
+    "image": "/images/student.png",
     "description": "A project utilizing machine learning to predict students' potential majors based on their interests and academic performance.",
-    "timeline": [
-      {
-        "event": "Collect Data",
-        "date": "Oct 1, 2024",
-        "description": "Collected data by taking pictures of people who gave us their consent."
-      },
-      {
-        "event": "Clean Data",
-        "date": "Oct 2, 2024",
-        "description": "Make all the data into the same format and crop."
-      },
-      {
-        "event": "Train Model",
-        "date": "Oct 4, 2024",
-        "description": "Fit the model to the training data."
-      },
-      {
-        "event": "Validate Model",
-        "date": "Oct 8, 2024",
-        "description": "Check the model's performance using a validation set."
-      }
-    ]
+    "notebookURL": ""
+  },
+  {
+    "clickable": true,
+    "id": "ottoman-script",
+    "title": "Ottoman Script Translator",
+    "date": "",
+    "image": "/images/ottoman.jpg",
+    "description": "",
+    "notebookURL": ""
+  },
+  {
+    "clickable": true,
+    "id": "news-bias-model",
+    "title": "News Bias Model",
+    "date": "",
+    "image": "/images/news-bias.png",
+    "description": "",
+    "notebookURL": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-model/refs/heads/main/src/bias-analysis.ipynb"
   },
   {
     "clickable": false,
@@ -36,24 +33,6 @@
     "date": "",
     "image": "/images/ComingSoon.jpg",
     "description": "",
-    "timeline": []
-  },
-  {
-    "clickable": false,
-    "id": "coming-soon",
-    "title": "Coming Soon",
-    "date": "",
-    "image": "/images/ComingSoon.jpg",
-    "description": "",
-    "timeline": []
-  },
-  {
-    "clickable": false,
-    "id": "coming-soon",
-    "title": "Coming Soon",
-    "date": "",
-    "image": "/images/ComingSoon.jpg",
-    "description": "",
-    "timeline": []
+    "notebookURL": ""
   }
 ]
