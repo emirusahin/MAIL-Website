@@ -4,15 +4,15 @@ import Image from 'next/image';
 export default function Team() {
     return (
         <>
-            <h1 className="font-Inter text-white sm:text-5xl lg:text-8xl text-center">The Team</h1>
+            <h1 className="font-Inter text-black sm:text-5xl lg:text-8xl text-center">Execs</h1>
             <div className="flex flex-col items-center my-10">
-                <div className="flex flex-wrap justify-center gap-6">
+                <div className="flex flex-wrap justify-center gap-4">
                     {teamMembers.map((member, index) => (
                         <div 
                             key={index} 
-                            className="bg-gray-800 text-white rounded-lg p-4 w-80">
+                            className="bg-gray-800 text-black rounded-lg p-1 w-80">
                             <div className="relative w-full h-64 mb-4">
-                                <Image 
+                                <Image
                                     src={member.image} 
                                     alt={member.name} 
                                     className="object-cover rounded-lg" 

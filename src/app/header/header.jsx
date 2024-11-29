@@ -41,12 +41,12 @@ export default function Navbar() {
         <ul className=" flex">
           <Navitem color="black" id="#" label="About"/>
           <Navitem color="black" id="projects" label="Projects"/>
-          <Navitem color="black" id="#" label="Contact"/>
-          {/* <Navitem color="white" id="team" label="Team"/> */}
+          <Navitem color="black" id="#" label="Contact" link="mailto:mcgillailab@gmail.com"/>
+          <Navitem color="black" id="team" label="Team"/>
         </ul>
       </div>
       <div className="navbar-end pr-8">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJkzj-gXw2ptXYBc-uF9M-5a1jbB5e3QfevoujqSAYJeA-yw/viewform" className="text-black text-lg border border-black px-6 py-2 cursor-pointer hvr-sink">Join</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJkzj-gXw2ptXYBc-uF9M-5a1jbB5e3QfevoujqSAYJeA-yw/viewform" target="_blank" className="text-black text-lg border border-black px-6 py-2 cursor-pointer hvr-sink">Join</a>
       </div>
     </div>
   );
