@@ -15,12 +15,11 @@ export default async function ProjectPage({ params }) {
             <h2 className='text-xl text-black'>{projectDetails.date}</h2>
             <div className='px-36'>
                 {notebookData && notebookData.cells.map((cell, index) => {
-                    // Check the type of cell (code or markdown)
                     if (cell.cell_type === 'markdown') {
                         return (
                             <div key={index} className='markdown'>
                                 <ReactMarkdown>
-                                    {cell.source.join(' ')}
+                                    {Array.isArray(cell.source) ? cell.source.join(' ') : cell.source}
                                 </ReactMarkdown>
 
                                 
@@ -31,7 +30,10 @@ export default async function ProjectPage({ params }) {
                     if (cell.cell_type === 'code') {
                         return (
                             <div key={index}>
-                                <CodeBlock>{cell.source.join('')}</CodeBlock>
+                                <CodeBlock>
+                                    {Array.isArray(cell.source) ? cell.source.join(' ') : cell.source}
+                                </CodeBlock>
+                                
                             </div>
                         );
                     }
@@ -59,20 +61,3 @@ async function getNotebook(notebookURL) {
     const notebook = notebookRes.json()
     return notebook
 }
-
-
-
-{/* <div className='px-36 pt-4'>
-                <p>We begin by taking the raw text of the article...</p>
-                <CodeBlock>t_article = tokenize_article(article)</CodeBlock>
-                <p>Now, we’ve got our article split into individual words...</p>
-                <CodeBlock>l_article = lowercase(t_article)</CodeBlock>
-                <p>With the text all lowercased...</p>
-                <CodeBlock>r_article = remove_stopwords(l_article)</CodeBlock>
-                <p>Now that we’ve reduced the article...</p>
-                <CodeBlock>la_article = lemmatization(r_article)</CodeBlock>
-                <p>Next, we need to tidy up the text...</p>
-                <CodeBlock>re_article = remove_punctuation(la_article)</CodeBlock>
-                <p>Now that we’ve processed the article...</p>
-                <CodeBlock>model = Word2Vec.load("cnn_w2v.model")</CodeBlock>
-            </div> */}
