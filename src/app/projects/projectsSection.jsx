@@ -17,7 +17,7 @@ export default function ProjectsSection() {
                             date={project.date} 
                             image={project.image} 
                             clickable={project.clickable}
-                            key={project.id} 
+                            key={project.title.replace(' ', '-')} 
                         />
                     ))}
                 </div>
