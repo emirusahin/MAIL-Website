@@ -2,6 +2,7 @@
 import '../../styles/globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { convertTitleToSlug } from '../../components/helpers';
 
 export default function ProjectItem({ id, title, date, image, clickable }) {
     const link = `/projects/${convertTitleToSlug(title)}`;
@@ -49,14 +50,4 @@ export default function ProjectItem({ id, title, date, image, clickable }) {
         )}
        </>
     );
-}
-
-function convertTitleToSlug(title) {
-    return title
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w-]+/g, '')
-        .replace(/--+/g, '-')
-        .replace(/^-+|-+$/g, '');
 }

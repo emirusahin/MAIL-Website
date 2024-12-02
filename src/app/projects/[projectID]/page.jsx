@@ -2,9 +2,11 @@ import projectsData from '../../../data/projectsData.json' assert { type: 'json'
 import CodeBlock from './CodeBlock';
 import React from 'react';
 import ReactMarkdown from "react-markdown";
+import { convertTitleToSlug } from '../../../components/helpers';
 
 export default async function ProjectPage({ params }) {
-    const projectID = (await params).projectID
+    const projectID = (await params).projectID;
+    console.log(projectID);
 
     const projectDetails = await getProjectDetails(projectID);
     const notebookData = projectDetails.notebookURL ? await getNotebook(projectDetails.notebookURL) : null;
@@ -48,10 +50,11 @@ export default async function ProjectPage({ params }) {
 
 function getProjectDetails(projectID) {
     const projectDetails = projectsData.find(
-        project => project.id === String(projectID)
+        project => convertTitleToSlug(project.title) === String(projectID)
     );
     if (!projectDetails) {
-        throw new Error(`Project with ID ${projectID} not found`);
+
+        throw new Error(`Project with ID ${projectID} not found: ${projectsData})`);
     }
     return projectDetails;
 }

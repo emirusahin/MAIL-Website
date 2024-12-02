@@ -38,7 +38,7 @@ export default function Navbar() {
         
       </div>
       <div className="hidden lg:flex">
-        <ul className=" flex">
+        <ul className="flex">
           <Navitem color="black" id="#" label="About"/>
           <Navitem color="black" id="projects" label="Projects"/>
           <Navitem color="black" id="#" label="Contact" link="mailto:mcgillailab@gmail.com"/>
