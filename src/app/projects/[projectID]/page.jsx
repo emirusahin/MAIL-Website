@@ -6,7 +6,6 @@ import { convertTitleToSlug } from '../../../components/helpers';
 
 export default async function ProjectPage({ params }) {
     const projectID = (await params).projectID;
-    console.log(projectID);
 
     const projectDetails = await getProjectDetails(projectID);
     const notebookData = projectDetails.notebookURL ? await getNotebook(projectDetails.notebookURL) : null;
@@ -23,8 +22,6 @@ export default async function ProjectPage({ params }) {
                                 <ReactMarkdown>
                                     {Array.isArray(cell.source) ? cell.source.join(' ') : cell.source}
                                 </ReactMarkdown>
-
-                                
                             </div>
                         );
                     }
@@ -60,7 +57,9 @@ function getProjectDetails(projectID) {
 }
 
 async function getNotebook(notebookURL) {
+    console.log("FETCHING NOTEBOOK")
     const notebookRes = await fetch(notebookURL);
     const notebook = notebookRes.json()
+    console.log("GOT NOTEBOOK")
     return notebook
 }
