@@ -5,11 +5,11 @@ import ReactMarkdown from "react-markdown";
 import { convertTitleToSlug } from '../../../components/helpers';
 
 export default async function ProjectPage({ params }) {
-    const projectID = (await params).projectID;
+    const { projectID } = params;
 
     const projectDetails = await getProjectDetails(projectID);
     const notebookData = projectDetails.notebookURL ? await getNotebook(projectDetails.notebookURL) : null;
-
+    
     return (
         <>
             <div className='flex justify-center items-center text-6xl text-black'>{projectDetails.title}</div>
@@ -45,21 +45,25 @@ export default async function ProjectPage({ params }) {
 }
 
 
+export async function generateStaticParams() {
+    return projectsData.map((project) => ({
+        projectID: convertTitleToSlug(project.title), // Creates a slug based on the title
+    }));
+}
+
+
 function getProjectDetails(projectID) {
     const projectDetails = projectsData.find(
         project => convertTitleToSlug(project.title) === String(projectID)
     );
     if (!projectDetails) {
-
         throw new Error(`Project with ID ${projectID} not found: ${projectsData})`);
     }
     return projectDetails;
 }
 
 async function getNotebook(notebookURL) {
-    console.log("FETCHING NOTEBOOK")
-    const notebookRes = await fetch(notebookURL);
+    const notebookRes = await fetch(notebookURL, {  cache: 'no-store', next: { revalidate: 120 }}); // Updates page every 2 minutes
     const notebook = notebookRes.json()
-    console.log("GOT NOTEBOOK")
     return notebook
 }
