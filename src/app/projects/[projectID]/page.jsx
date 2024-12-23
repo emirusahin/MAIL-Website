@@ -51,6 +51,19 @@ export async function generateStaticParams() {
     }));
 }
 
+export async function generateStaticProps({ params }) {
+    const projectID = params.projectID;
+    const projectDetails = getProjectDetails(projectID);
+    const notebookData = projectDetails.notebookURL ? await getNotebook(projectDetails.notebookURL) : null;
+
+    return {
+        props: {
+            projectDetails,
+            notebookData,
+        },
+        revalidate: 120, // Optional: to keep content fresh with ISR (Incremental Static Regeneration)
+    };
+}
 
 function getProjectDetails(projectID) {
     const projectDetails = projectsData.find(
