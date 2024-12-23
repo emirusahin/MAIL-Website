@@ -55,7 +55,6 @@ export async function generateStaticProps({ params }) {
     const projectID = params.projectID;
     const projectDetails = getProjectDetails(projectID);
     const notebookData = projectDetails.notebookURL ? await getNotebook(projectDetails.notebookURL) : null;
-
     return {
         props: {
             projectDetails,
@@ -76,7 +75,7 @@ function getProjectDetails(projectID) {
 }
 
 async function getNotebook(notebookURL) {
-    const notebookRes = await fetch(notebookURL, {  cache: 'no-store', next: { revalidate: 120 }}); // Updates page every 2 minutes
+    const notebookRes = await fetch(notebookURL); // Updates page every 2 minutes
     const notebook = notebookRes.json()
     return notebook
 }
