@@ -1,254 +1,30 @@
 [
     {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
+        "name": "Emir Sahin",
+        "role": "President",
         "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
+        "major": "Comp Sci & Psychology",
+        "image": "/images/team/emir.jpg"
     },
     {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
+        "name": "Steven Thao",
+        "role": "Project lead",
         "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
+        "major": "Comp Eng",
+        "image": "/images/team/steven.png"
     },
     {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
+        "name": "Jacob Leader",
+        "role": "VP Web Dev",
         "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
+        "major": "Comp Sci and Math",
+        "image": "/images/team/jacob.jpg"
     },
     {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
+        "name": "William Kiem Lafond",
+        "role": "Project Lead",
         "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Alice Smith",
-        "role": "Frontend Developer",
-        "year": "U2",
-        "major": "Philosophy",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Bob Johnson",
-        "role": "Backend Developer",
-        "year": "U0",
-        "major": "Comp Sci",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Charlie Brown",
-        "role": "Full Stack Developer",
-        "year": "U1",
-        "major": "International Development",
-        "image": "/images/person.jpeg"
-    },
-    {
-        "name": "Dana White",
-        "role": "UI/UX Designer",
-        "year": "U3",
-        "major": "Business",
-        "image": "/images/person.jpeg"
+        "major": "Stats and Comp Sci",
+        "image": "/images/team/william.jpg"
     }
 ]
