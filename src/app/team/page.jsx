@@ -17,7 +17,8 @@ export default function Team() {
                                     alt={member.name} 
                                     className="object-cover rounded-lg" 
                                     layout="fill" 
-                                    objectFit="cover" 
+                                    // objectFit="cover" 
+                                    priority={index < 9}
                                 />
                             </div>
                             <h3 className="text-xl font-semibold">{member.name}</h3>
