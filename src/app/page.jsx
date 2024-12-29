@@ -7,7 +7,6 @@ import ParticlesBackground from '../components/TSparticles';
 import About from './landing/about.jsx';
 import ProjectsSection from './projects/projectsSection';
 import TypedText from './landing/typedText';
-import TeamSection from './team/teamSection';
 import Head from 'next/head';
 
 
