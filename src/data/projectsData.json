@@ -2,17 +2,9 @@
   {
     "clickable": true,
     "title": "Student Major Predictor",
-    "date": "Sept 12, 2024",
+    "date": "",
     "image": "/images/student.png",
     "description": "A project utilizing machine learning to predict students' potential majors based on their interests and academic performance.",
-    "notebookURL": ""
-  },
-  {
-    "clickable": true,
-    "title": "Ottoman Script Translator",
-    "date": "",
-    "image": "/images/ottoman.jpg",
-    "description": "",
     "notebookURL": ""
   },
   {
