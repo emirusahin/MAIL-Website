@@ -1,19 +1,19 @@
 [
   {
     "clickable": true,
-    "title": "Student Major Predictor",
-    "date": "",
-    "image": "/images/student.png",
-    "description": "A project utilizing machine learning to predict students' potential majors based on their interests and academic performance.",
-    "notebookURL": ""
-  },
-  {
-    "clickable": true,
     "title": "News Bias Model",
     "date": "",
     "image": "/images/news-bias.png",
     "description": "",
-    "notebookURL": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-model/refs/heads/main/src/bias-analysis-v2.ipynb"
+    "url": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-model/refs/heads/main/src/bias-analysis-v2.ipynb"
+  },
+  {
+    "clickable": true,
+    "title": "Neural decoding of Dreams",
+    "date": "",
+    "image": "/images/projects/brain_scan.png",
+    "description": "",
+    "url": "https://github.com/emirusahin/neural-decoding-of-dreams/raw/main/Neural%20Decoding%20of%20Dreams.pdf"
   },
   {
     "clickable": false,
@@ -21,6 +21,6 @@
     "date": "",
     "image": "/images/ComingSoon.jpg",
     "description": "",
-    "notebookURL": ""
+    "url": ""
   }
 ]
