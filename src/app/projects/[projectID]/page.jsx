@@ -4,6 +4,8 @@ import React from 'react';
 import ReactMarkdown from "react-markdown";
 import { convertTitleToSlug } from '../../../components/helpers';
 import pdf2md from '@opendocsg/pdf2md';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+
 
 export default async function ProjectPage({ params }) {
     const { projectID } = params;
