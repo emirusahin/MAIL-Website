@@ -5,7 +5,7 @@
     "date": "",
     "image": "/images/news-bias.png",
     "description": "",
-    "url": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-model/refs/heads/main/src/bias-analysis-v2.ipynb"
+    "url": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-w2v/refs/heads/main/README.md"
   },
   {
     "clickable": true,
@@ -13,7 +13,7 @@
     "date": "",
     "image": "/images/projects/brain_scan.png",
     "description": "",
-    "url": "https://github.com/emirusahin/neural-decoding-of-dreams/raw/main/Neural%20Decoding%20of%20Dreams.pdf"
+    "url": "https://github.com/emirusahin/neural-decoding-of-dreams/edit/main/README.md"
   },
   {
     "clickable": false,
