@@ -3,7 +3,7 @@
     "clickable": true,
     "title": "News Bias Model",
     "date": "",
-    "image": "/images/news-bias.png",
+    "image": "/images/projects/news-bias.png",
     "description": "",
     "url": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-w2v/refs/heads/main/README.md"
   },
@@ -19,7 +19,7 @@
     "clickable": false,
     "title": "Coming Soon",
     "date": "",
-    "image": "/images/ComingSoon.jpg",
+    "image": "/images/projects/ComingSoon.jpg",
     "description": "",
     "url": ""
   }
