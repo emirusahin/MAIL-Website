@@ -33,5 +33,33 @@
         "year": "U0",
         "major": "Comp Sci and Math",
         "image": "/images/teamMembers/jacob.jpg"
+    },
+    {
+        "name": "Taima",
+        "role": "VP Internal",
+        "year": "__",
+        "major": "___",
+        "image": "/images/teamMembers/taima.jpeg"
+    },
+    {
+        "name": "Ezra",
+        "role": "Project Lead",
+        "year": "__",
+        "major": "___",
+        "image": "/images/teamMembers/ezra.jpg"
+    },
+    {
+        "name": "Jonny",
+        "role": "Project Lead",
+        "year": "__",
+        "major": "___",
+        "image": "/images/teamMembers/jonny.jpg"
+    },
+    {
+        "name": "Skylar ___",
+        "role": "VP External",
+        "year": "__",
+        "major": "___",
+        "image": "/images/teamMembers/skylar.jpg"
     }
 ]
