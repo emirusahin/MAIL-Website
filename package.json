@@ -17,6 +17,7 @@
     "@opendocsg/pdf2md": "^0.2.1",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
+    "@vercel/analytics": "^1.5.0",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.20",
     "font-awesome": "^4.7.0",
