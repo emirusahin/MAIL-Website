@@ -8,8 +8,11 @@ import { convertTitleToSlug } from '../../../components/helpers';
 import pdf2md from '@opendocsg/pdf2md';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
+// check for updates every minute
+export const revalidate = 60;
+
 export default async function ProjectPage({ params }) {
-  const { projectID } = params;
+  const { projectID } = await params;
   const projectDetails = await getProjectDetails(projectID);
   const content = await createContent(projectDetails.url);
 
@@ -30,26 +33,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateStaticProps({ params }) {
-  const projectID = params.projectID;
-  const projectDetails = getProjectDetails(projectID);
-  let fileData = null;
-  try {
-    if (projectDetails.url) {
-      fileData = await getFileData(projectDetails.url);
-    }
-  } catch (error) {
-    console.error('Error in generateStaticProps fetching fileData:', error);
-  }
-  return {
-    props: {
-      projectDetails,
-      fileData,
-    },
-    revalidate: 120,
-  };
-}
-
 function getProjectDetails(projectID) {
   const projectDetails = projectsData.find(
     (project) => convertTitleToSlug(project.title) === String(projectID)
@@ -62,7 +45,6 @@ function getProjectDetails(projectID) {
   return projectDetails;
 }
 
-// Fetch JSON content (for notebooks)
 async function getJSONContent(url) {
   const res = await fetch(url);
   if (!res.ok) {
@@ -77,7 +59,6 @@ async function getJSONContent(url) {
   }
 }
 
-// Fetch plain text content (for Python scripts)
 async function getTextContent(url) {
   const res = await fetch(url);
   if (!res.ok) {
@@ -89,18 +70,16 @@ async function getTextContent(url) {
 async function getPDFfromURL(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Failed to fetch PDF from ${url}`);
-
   const buffer = await response.arrayBuffer();
   return pdf2md(Buffer.from(buffer));
 }
 
-// Create content based on file extension
 const createContent = async (url) => {
   try {
     const fileTypeMatch = url.match(/[^.]+$/);
     if (!fileTypeMatch) return null;
     const fileType = fileTypeMatch[0].toLowerCase();
-
+    console.log(fileType);
     if (fileType === 'pdf') {
       return await getPDFContent(url);
     }
@@ -110,6 +89,9 @@ const createContent = async (url) => {
     if (fileType === 'py') {
       return await getPythonContent(url);
     }
+    if (fileType === 'md') {
+      return await getMDContent(url);
+    }
     return null;
   } catch (error) {
     console.error('Error creating content for url', url, error);
@@ -117,7 +99,7 @@ const createContent = async (url) => {
   }
 };
 
-// Custom heading components to enforce styling
+// Custom heading components for consistent styling
 const headingComponents = {
   h1: ({ node, children, ...props }) => (
     <h1 className="text-4xl font-bold my-4" {...props}>
@@ -151,16 +133,14 @@ const headingComponents = {
   ),
 };
 
+// Render PDF content as markdown
 const getPDFContent = async (url) => {
   let pdfMD = await getPDFfromURL(url);
-  // Trim each line to remove extra whitespace
   const trimmedMD = pdfMD
     .split('\n')
     .map((line) => line.trim())
     .join('\n');
-  // Ensure a space after the first group of '#' if missing
   let fixedMD = trimmedMD.replace(/^(#+)(\S)/gm, '$1 $2');
-  // Collapse extra heading markers (e.g. "# # Conclusion" -> "# Conclusion")
   fixedMD = fixedMD.replace(/^(#{1,6})(?:\s*#{1,6})+\s+(.*)$/gm, '$1 $2');
   console.log('Processed PDF Markdown:', fixedMD);
   return (
@@ -187,11 +167,13 @@ const getPDFContent = async (url) => {
   );
 };
 
+// Render Python code
 const getPythonContent = async (url) => {
   const codeText = await getTextContent(url);
-  return <CodeBlock>{codeText}</CodeBlock>;
+  return <CodeBlock language="python">{codeText}</CodeBlock>;
 };
 
+// Render Jupyter notebook content
 export const getNotebookContent = async (url) => {
   const notebookData = await getJSONContent(url);
   return (
@@ -206,7 +188,7 @@ export const getNotebookContent = async (url) => {
                   components={headingComponents}
                 >
                   {Array.isArray(cell.source)
-                    ? cell.source.join(' ')
+                    ? cell.source.join('\n')
                     : cell.source}
                 </ReactMarkdown>
               </div>
@@ -215,9 +197,9 @@ export const getNotebookContent = async (url) => {
           if (cell.cell_type === 'code') {
             return (
               <div key={index}>
-                <CodeBlock>
+                <CodeBlock language="python">
                   {Array.isArray(cell.source)
-                    ? cell.source.join(' ')
+                    ? cell.source.join('\n')
                     : cell.source}
                 </CodeBlock>
               </div>
@@ -229,17 +211,29 @@ export const getNotebookContent = async (url) => {
   );
 };
 
-const getFileData = async (url) => {
-  const fileTypeMatch = url.match(/[^.]+$/);
-  if (!fileTypeMatch) return null;
-  const fileType = fileTypeMatch[0].toLowerCase();
-
-  if (fileType === 'pdf') {
-    return await getPDFfromURL(url);
-  } else if (fileType === 'ipynb') {
-    return await getJSONContent(url);
-  } else if (fileType === 'py') {
-    return await getTextContent(url);
-  }
-  return null;
+// Render Markdown content
+const getMDContent = async (url) => {
+  const mdContent = await getTextContent(url);
+  return (
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      components={{
+        ...headingComponents,
+        code({ node, inline, className, children, ...props }) {
+          const match = /language-(\w+)/.exec(className || '');
+          return !inline && match ? (
+            <SyntaxHighlighter language={match[1]} PreTag="div" {...props}>
+              {String(children).replace(/\n$/, '')}
+            </SyntaxHighlighter>
+          ) : (
+            <code className={className} {...props}>
+              {children}
+            </code>
+          );
+        },
+      }}
+    >
+      {mdContent}
+    </ReactMarkdown>
+  );
 };
