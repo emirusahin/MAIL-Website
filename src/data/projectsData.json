@@ -10,17 +10,25 @@
   {
     "clickable": true,
     "title": "Neural decoding of Dreams",
-    "date": "",
+    "date": "Nov 1, 2024",
     "image": "/images/projects/brain_scan.png",
     "description": "",
     "url": "https://raw.githubusercontent.com/emirusahin/neural-decoding-of-dreams/refs/heads/main/README.md"
   },
   {
-    "clickable": false,
-    "title": "Coming Soon",
+    "clickable": true,
+    "title": "Generating Skyscrapers with VAEs",
     "date": "",
-    "image": "/images/projects/ComingSoon.jpg",
+    "image": "/images/projects/skyscrapers.png",
     "description": "",
-    "url": ""
+    "url": "https://raw.githubusercontent.com/McGill-AI-Lab/Tokyo-PointCloud-PointNetpp-VAE/refs/heads/main/README.md"
+  },
+  {
+    "clickable": true,
+    "title": "Reinforcement Learning for Board Games",
+    "date": "",
+    "image": "/images/projects/catan.png",
+    "description": "",
+    "url": "https://raw.githubusercontent.com/epicgamer17/rl-research/refs/heads/main/readme1.ipynb"
   }
 ]
