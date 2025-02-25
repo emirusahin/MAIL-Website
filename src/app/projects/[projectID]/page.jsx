@@ -8,7 +8,7 @@ import { convertTitleToSlug } from '../../../components/helpers';
 import pdf2md from '@opendocsg/pdf2md';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
-// check for updates every minute
+// Check for updates every minute
 export const revalidate = 60;
 
 export default async function ProjectPage({ params }) {
@@ -17,13 +17,15 @@ export default async function ProjectPage({ params }) {
   const content = await createContent(projectDetails.url);
 
   return (
-    <>
-      <div className="flex justify-center items-center text-6xl text-black">
-        {projectDetails.title}
+    <div className="min-h-screen bg-white py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center items-center text-6xl text-black font-Inter font-bold">
+          {projectDetails.title}
+        </div>
+        <h2 className="text-xl text-gray-600 text-center mt-2">{projectDetails.date}</h2>
+        <div className="px-4 sm:px-12 lg:px-36 mt-8">{content}</div>
       </div>
-      <h2 className="text-xl text-black">{projectDetails.date}</h2>
-      <div className="px-36">{content}</div>
-    </>
+    </div>
   );
 }
 
@@ -38,18 +40,14 @@ function getProjectDetails(projectID) {
     (project) => convertTitleToSlug(project.title) === String(projectID)
   );
   if (!projectDetails) {
-    throw new Error(
-      `Project with ID ${projectID} not found: ${JSON.stringify(projectsData)}`
-    );
+    throw new Error(`Project with ID ${projectID} not found: ${JSON.stringify(projectsData)}`);
   }
   return projectDetails;
 }
 
 async function getJSONContent(url) {
   const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Failed to fetch JSON from ${url}`);
-  }
+  if (!res.ok) throw new Error(`Failed to fetch JSON from ${url}`);
   const text = await res.text();
   try {
     return JSON.parse(text);
@@ -61,10 +59,9 @@ async function getJSONContent(url) {
 
 async function getTextContent(url) {
   const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Failed to fetch text from ${url}`);
-  }
-  return res.text();
+  if (!res.ok) throw new Error(`Failed to fetch text from ${url}`);
+  // Normalize newlines to single \n
+  return res.text().then(text => text.replace(/\r\n/g, '\n').replace(/\n{2,}/g, '\n'));
 }
 
 async function getPDFfromURL(url) {
@@ -77,22 +74,14 @@ async function getPDFfromURL(url) {
 const createContent = async (url) => {
   try {
     const fileTypeMatch = url.match(/[^.]+$/);
-    if (!fileTypeMatch) return null;
+    if (!fileTypeMatch) return <div>No valid file type found.</div>;
     const fileType = fileTypeMatch[0].toLowerCase();
     console.log(fileType);
-    if (fileType === 'pdf') {
-      return await getPDFContent(url);
-    }
-    if (fileType === 'ipynb') {
-      return await getNotebookContent(url);
-    }
-    if (fileType === 'py') {
-      return await getPythonContent(url);
-    }
-    if (fileType === 'md') {
-      return await getMDContent(url);
-    }
-    return null;
+    if (fileType === 'pdf') return await getPDFContent(url);
+    if (fileType === 'ipynb') return await getNotebookContent(url);
+    if (fileType === 'py') return await getPythonContent(url);
+    if (fileType === 'md') return await getMDContent(url);
+    return <div>Unsupported file type: {fileType}</div>;
   } catch (error) {
     console.error('Error creating content for url', url, error);
     return <div>Error loading content.</div>;
@@ -101,47 +90,20 @@ const createContent = async (url) => {
 
 // Custom heading components for consistent styling
 const headingComponents = {
-  h1: ({ node, children, ...props }) => (
-    <h1 className="text-4xl font-bold my-4" {...props}>
-      {children}
-    </h1>
-  ),
-  h2: ({ node, children, ...props }) => (
-    <h2 className="text-3xl font-bold my-3" {...props}>
-      {children}
-    </h2>
-  ),
-  h3: ({ node, children, ...props }) => (
-    <h3 className="text-2xl font-bold my-2" {...props}>
-      {children}
-    </h3>
-  ),
-  h4: ({ node, children, ...props }) => (
-    <h4 className="text-xl font-bold my-2" {...props}>
-      {children}
-    </h4>
-  ),
-  h5: ({ node, children, ...props }) => (
-    <h5 className="text-lg font-bold my-1" {...props}>
-      {children}
-    </h5>
-  ),
-  h6: ({ node, children, ...props }) => (
-    <h6 className="text-base font-bold my-1" {...props}>
-      {children}
-    </h6>
-  ),
+  h1: ({ node, children, ...props }) => <h1 className="text-4xl font-bold my-4" {...props}>{children}</h1>,
+  h2: ({ node, children, ...props }) => <h2 className="text-3xl font-bold my-3" {...props}>{children}</h2>,
+  h3: ({ node, children, ...props }) => <h3 className="text-2xl font-bold my-2" {...props}>{children}</h3>,
+  h4: ({ node, children, ...props }) => <h4 className="text-xl font-bold my-2" {...props}>{children}</h4>,
+  h5: ({ node, children, ...props }) => <h5 className="text-lg font-bold my-1" {...props}>{children}</h5>,
+  h6: ({ node, children, ...props }) => <h6 className="text-base font-bold my-1" {...props}>{children}</h6>,
 };
 
 // Render PDF content as markdown
 const getPDFContent = async (url) => {
   let pdfMD = await getPDFfromURL(url);
-  const trimmedMD = pdfMD
-    .split('\n')
-    .map((line) => line.trim())
-    .join('\n');
-  let fixedMD = trimmedMD.replace(/^(#+)(\S)/gm, '$1 $2');
-  fixedMD = fixedMD.replace(/^(#{1,6})(?:\s*#{1,6})+\s+(.*)$/gm, '$1 $2');
+  // Normalize spacing in PDF markdown
+  const trimmedMD = pdfMD.split('\n').map(line => line.trim()).filter(line => line).join('\n');
+  const fixedMD = trimmedMD.replace(/^(#+)(\S)/gm, '$1 $2').replace(/^(#{1,6})(?:\s*#{1,6})+\s+(.*)$/gm, '$1 $2');
   console.log('Processed PDF Markdown:', fixedMD);
   return (
     <ReactMarkdown
@@ -155,9 +117,7 @@ const getPDFContent = async (url) => {
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (
-            <code className={className} {...props}>
-              {children}
-            </code>
+            <code className={className} {...props}>{children}</code>
           );
         },
       }}
@@ -178,35 +138,31 @@ export const getNotebookContent = async (url) => {
   const notebookData = await getJSONContent(url);
   return (
     <>
-      {notebookData &&
-        notebookData.cells.map((cell, index) => {
-          if (cell.cell_type === 'markdown') {
-            return (
-              <div key={index} className="markdown">
-                <ReactMarkdown
-                  remarkPlugins={[remarkGfm]}
-                  components={headingComponents}
-                >
-                  {Array.isArray(cell.source)
-                    ? cell.source.join('\n')
-                    : cell.source}
-                </ReactMarkdown>
-              </div>
-            );
-          }
-          if (cell.cell_type === 'code') {
-            return (
-              <div key={index}>
-                <CodeBlock language="python">
-                  {Array.isArray(cell.source)
-                    ? cell.source.join('\n')
-                    : cell.source}
-                </CodeBlock>
-              </div>
-            );
-          }
-          return null;
-        })}
+      {notebookData && notebookData.cells.map((cell, index) => {
+        const source = Array.isArray(cell.source) ? cell.source.join('') : cell.source;
+        // Normalize newlines in notebook source
+        const normalizedSource = source.replace(/\r\n/g, '\n').replace(/\n{2,}/g, '\n');
+        if (cell.cell_type === 'markdown') {
+          return (
+            <div key={index} className="markdown">
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={headingComponents}
+              >
+                {normalizedSource}
+              </ReactMarkdown>
+            </div>
+          );
+        }
+        if (cell.cell_type === 'code') {
+          return (
+            <div key={index}>
+              <CodeBlock language="python">{normalizedSource}</CodeBlock>
+            </div>
+          );
+        }
+        return null;
+      })}
     </>
   );
 };
@@ -226,9 +182,7 @@ const getMDContent = async (url) => {
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (
-            <code className={className} {...props}>
-              {children}
-            </code>
+            <code className={className} {...props}>{children}</code>
           );
         },
       }}
