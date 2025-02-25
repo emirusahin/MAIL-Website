@@ -16,13 +16,6 @@ export default function Navitem({ label, id, color, link }) {
                     transition={{ duration: 0.2 }}
                 >
                     {label}
-                    {/* Animated underline */}
-                    <motion.span
-                        className="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-500 origin-left"
-                        initial={{ scaleX: 0 }}
-                        whileHover={{ scaleX: 1 }}
-                        transition={{ duration: 0.3, ease: 'easeOut' }}
-                    />
                     {/* Pulse effect */}
                     <motion.span
                         className="absolute inset-0 -z-10 bg-emerald-500/20 rounded-full"
@@ -35,7 +28,6 @@ export default function Navitem({ label, id, color, link }) {
         );
     }
 
-    // Handle navigation logic
     const handleNavigation = (id) => {
         if (pathname === '/') {
             const element = document.getElementById(id);
@@ -63,7 +55,6 @@ export default function Navitem({ label, id, color, link }) {
                 transition={{ duration: 0.2 }}
             >
                 {label}
-                {/* Underline: Always visible if active, animates on hover */}
                 <motion.span
                     className="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-500 origin-left"
                     initial={{ scaleX: isActive ? 1 : 0 }}
