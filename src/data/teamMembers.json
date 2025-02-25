@@ -42,24 +42,24 @@
         "image": "/images/teamMembers/taima.jpeg"
     },
     {
-        "name": "Ezra",
-        "role": "Project Lead",
-        "year": "__",
-        "major": "___",
+        "name": "Ezra Huang",
+        "role": "Project Lead (RL)",
+        "year": "U2",
+        "major": "Honours Math and Comp Sci",
         "image": "/images/teamMembers/ezra.jpg"
     },
     {
-        "name": "Jonny",
-        "role": "Project Lead",
-        "year": "__",
-        "major": "___",
+        "name": "Jonathan Lamontagne Kratz",
+        "role": "Project Lead (RL)",
+        "year": "U2",
+        "major": "Honours Comp Sci",
         "image": "/images/teamMembers/jonny.jpg"
     },
     {
-        "name": "Skylar ___",
+        "name": "Skylar Gu",
         "role": "VP External",
-        "year": "__",
-        "major": "___",
+        "year": "U2",
+        "major": "Honours Math",
         "image": "/images/teamMembers/skylar.jpg"
     }
 ]
