@@ -1,8 +1,9 @@
+"use client"; 
 import { useEffect } from 'react';
 import useElementVisibility from '@/app/hooks/visibilityHook';
 import 'animate.css';
 
-const AnimateOnViewWrapper = ({ children, animation='animate__zoomIn' }) => {
+const AnimateOnViewWrapper = ({ children, animation = 'animate__zoomIn' }) => {
     const { isVisible, elementRef } = useElementVisibility();
     
     return (
