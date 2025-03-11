@@ -37,12 +37,15 @@
     "react-pdf-viewer": "^0.1.0",
     "react-syntax-highlighter": "^15.6.1",
     "react-tsparticles": "^2.12.2",
+    "rehype-raw": "^7.0.0",
     "remark": "^15.0.1",
+    "remark-directive": "^4.0.0",
     "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1",
     "tsparticles": "^3.5.0",
     "tsparticles-slim": "^2.12.0",
-    "typed.js": "^2.1.0"
+    "typed.js": "^2.1.0",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "daisyui": "^4.12.10",

@@ -31,7 +31,6 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
-          {/* Typed Text with Motion */}
           <motion.div
             className="w-1/2 text-center text-white"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -39,8 +38,7 @@ export default function Home() {
             transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
           >
             <TypedText/>
-            {/* Fade in About Section */}
-            <motion.div
+             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut', delay: 0.8 }}
@@ -50,8 +48,7 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Project Section Reveal */}
-        <motion.div
+         <motion.div
           id="projects"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
