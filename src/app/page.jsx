@@ -7,6 +7,7 @@ import Spacer from '../components/spacer';
 import ParticlesBackground from '../components/TSparticles';
 import About from './landing/about.jsx';
 import ProjectsSection from './projects/projectsSection';
+import PartnersSection from './partners/partnersSection';
 import TypedText from './landing/typedText';
 import Head from 'next/head';
 
@@ -56,6 +57,15 @@ export default function Home() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
           <ProjectsSection />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        >
+          <PartnersSection />
         </motion.div>
 
         <Spacer />

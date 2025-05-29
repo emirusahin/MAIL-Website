@@ -16,6 +16,7 @@ export default function Navbar() {
         <ul className="flex">
           <Navitem color="black" id="#" label="About"/>
           <Navitem color="black" id="projects" label="Projects"/>
+          <Navitem color="black" id="partners" label="Partners"/>
           <Navitem color="black" id="#" label="Contact" link="mailto:mcgillailab@gmail.com"/>
           <Navitem color="black" id="team" label="Team"/>
         </ul>

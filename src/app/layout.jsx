@@ -11,25 +11,20 @@ export const metadata = {
 }
 
 export default function Layout({ children }) {
-  
   return (
-    <>
-    
-      <html lang="en" className='bg-offwhite'>
-           <body>
-          <link rel="icon" href="/images/favicon.ico" />
-            <div className='bg-blue'>
-              <main>
-              <Navbar/>
-                {children}
-              <Analytics/>
-              </main>
-            </div>
-          </body>
-     </html>
-    
-    </>
-    
-
+    <html lang="en" className='bg-offwhite'>
+      <head>
+        <link rel="icon" href="/images/favicon.ico" />
+      </head>
+      <body suppressHydrationWarning>
+        <div className='bg-blue'>
+          <main>
+            <Navbar/>
+            {children}
+            <Analytics/>
+          </main>
+        </div>
+      </body>
+    </html>
   );
 }

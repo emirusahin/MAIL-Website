@@ -105,11 +105,14 @@ const markdownComponents = {
       <code className="bg-gray-100 rounded px-1" {...props}>{children}</code>
     );
   },
-  video: ({ src }) => (
-    <video controls className="max-w-full my-4 rounded">
-      <source src={src} />
-    </video>
-  ),
+  video: ({ src }) => {
+    if (!src) return null;
+    return (
+      <video controls className="max-w-full my-4 rounded">
+        <source src={src} />
+      </video>
+    );
+  },
 };
 
 const createContent = async (url) => {
@@ -180,13 +183,16 @@ export const getNotebookContent = async (url) => {
 
 const getMDContent = async (url) => {
   const mdContent = await getTextContent(url);
+  // Remove empty video tags
+  const cleanedContent = mdContent.replace(/<video[^>]*><\/video>/g, '');
+  
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={markdownComponents}
     >
-      {mdContent}
+      {cleanedContent}
     </ReactMarkdown>
   );
 };
