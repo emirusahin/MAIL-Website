@@ -1,7 +1,22 @@
 [
-    {
+        {
+        "name": "Espressif Systems",
+        "image": "/images/espressif_logo.png",
+        "website": "https://www.espressif.com"
+    },
+        {
+        "name": "Analog Devices",
+        "image": "/images/analog_devices_logo.png",
+        "website": "https://www.analog.com/en/index.html"
+    },
+        {
+        "name": "Mill-Max Manufacturing",
+        "image": "/images/mill_max_logo.png",
+        "website": "https://www.mill-max.com"
+    },
+        {
         "name": "NebulaBlock",
         "image": "/images/nebula.png",
         "website": "https://nebulablock.com"
     }
-] 
+]
