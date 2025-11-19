@@ -25,7 +25,7 @@ export default async function ProjectPage({ params }) {
           {projectDetails.title}
         </div>
         <h2 className="text-xl text-gray-600 text-center mt-2">{projectDetails.date}</h2>
-        <div className="px-4 sm:px-12 lg:px-36 mt-8 prose max-w-none">{content}</div>
+        <div className="px-4 sm:px-12 lg:px-36 mt-8 prose max-w-none text-justify">{content}</div>
       </div>
     </div>
   );
