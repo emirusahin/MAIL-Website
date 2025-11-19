@@ -5,7 +5,7 @@ import "animate.css";
 
 export default function PartnersSection() {
   return (
-    <section className="py-8">
+    <section id="partners" className="py-8">
       <AnimateOnViewWrapper>
         {/* Same title format as Projects */}
         <h1 className="pb-6 pl-8 font-Inter text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight">
