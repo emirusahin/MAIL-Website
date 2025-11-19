@@ -15,7 +15,7 @@ export default function PartnersSection() {
 
       <AnimateOnViewWrapper>
         {/* Same horizontal carousel as Projects */}
-        <div className="carousel w-full space-x-6 p-4 pl-8 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+        <div id="partners" className="carousel w-full space-x-6 p-4 pl-8 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
           {partnersData.map((p) => {
             const key = `${p.name}-${p.website}`; // unique key
             return (
@@ -39,7 +39,7 @@ export default function PartnersSection() {
                 </div>
 
                 {/* Partner name */}
-                <p className="mt-3 text-center text-sm opacity-80 group-hover:opacity-100">
+                <p className="mt-3 font-semibold text-center text-sm opacity-80 group-hover:opacity-100">
                   {p.name}
                 </p>
               </a>

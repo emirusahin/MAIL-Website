@@ -6,11 +6,11 @@ export default function Navbar() {
       <div className="navbar-start">
         <a href="/" className="flex justify-center items-center h-full pt-1 px-4 hvr-grow-rotate">
             <div className="flex flex-col justify-center items-center">
-              <div className="text-black text-2xl font-Lora leading-tight">McGill</div>  
-              <div className="text-black text-xl font-Lora leading-tight">AI Lab</div> 
+              <div className="text-black text-2xl font-Lora leading-tight">McGill</div>
+              <div className="text-black text-xl font-Lora leading-tight">AI Lab</div>
             </div>
         </a>
-        
+
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex">
         <ul className="flex">

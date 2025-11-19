@@ -30,5 +30,13 @@
     "image": "/images/projects/catan.png",
     "description": "",
     "url": "https://raw.githubusercontent.com/epicgamer17/rl-research/refs/heads/main/readme1.ipynb"
+  },
+  {
+    "clickable": true,
+    "title": "sEMGxRoboticHand",
+    "date": "In Progress",
+    "image": "/images/projects/sEMG.png",
+    "description": "",
+    "url": "https://raw.githubusercontent.com/McGill-AI-Lab/device-agnostic-semg/refs/heads/main/README.md"
   }
 ]
