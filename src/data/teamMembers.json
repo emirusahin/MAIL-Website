@@ -68,5 +68,12 @@
         "year": "U4",
         "major": "Cognitive Science",
         "image": "/images/teamMembers/anna.jpg"
+    },
+    {
+        "name": "Kori Zhang",
+        "role": "VP Outreach",
+        "year": "U3",
+        "major": "Bioengineering",
+        "image": "/images/teamMembers/kori.jpeg"
     }
 ]
