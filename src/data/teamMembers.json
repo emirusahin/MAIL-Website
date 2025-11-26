@@ -7,59 +7,31 @@
         "image": "/images/teamMembers/emir.jpg"
     },
     {
-        "name": "Steven Thao",
-        "role": "Project lead",
-        "year": "U2",
-        "major": "Comp Eng",
-        "image": "/images/teamMembers/steven.png"
-    },
-    {
-        "name": "William Kiem Lafond",
-        "role": "Project Lead",
-        "year": "U2",
-        "major": "Comp Sci and Stats",
-        "image": "/images/teamMembers/william.jpg"
-    },
-    {
-        "name": "Dowoo Kim",
-        "role": "VP Communications",
-        "year": "U2",
-        "major": "Comp Sci and Stats",
-        "image": "/images/teamMembers/dowoo.jpg"
-    },
-    {
-        "name": "Jacob Leader",
-        "role": "VP Web Dev",
-        "year": "U0",
-        "major": "Comp Sci and Math",
-        "image": "/images/teamMembers/jacob.jpg"
-    },
-    {
         "name": "Taimaa Bachi",
         "role": "VP Internal",
-        "year": "U1",
+        "year": "U2",
         "major": "Software Eng",
         "image": "/images/teamMembers/taima.jpeg"
     },
     {
-        "name": "Ezra Huang",
-        "role": "Project Lead (RL)",
-        "year": "U2",
-        "major": "Honours Math and Comp Sci",
-        "image": "/images/teamMembers/ezra.jpg"
-    },
-    {
-        "name": "Jonathan Lamontagne Kratz",
-        "role": "Project Lead (RL)",
-        "year": "U2",
-        "major": "Honours Comp Sci",
-        "image": "/images/teamMembers/jonny.jpg"
-    },
-    {
         "name": "Skylar Gu",
         "role": "VP External",
-        "year": "U2",
+        "year": "U3",
         "major": "Honours Math",
         "image": "/images/teamMembers/skylar.jpg"
+    },
+    {
+        "name": "Karen Chen Lai",
+        "role": "VP Web",
+        "year": "U3",
+        "major": "Computer Engineering",
+        "image": "/images/teamMembers/karen.jpg"
+    },
+    {
+        "name": "Sebastien Renard",
+        "role": "VP Communications",
+        "year": "U1",
+        "major": "Computer Science",
+        "image": "/images/teamMembers/sebastien.jpg"
     }
 ]
