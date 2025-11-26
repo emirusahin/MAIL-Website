@@ -6,11 +6,18 @@
         "major": "Comp Sci and Psychology",
         "image": "/images/teamMembers/emir.jpg"
     },
+        {
+        "name": "Dowoo Kim",
+        "role": "Project Lead",
+        "year": "U3",
+        "major": "Comp Sci and Stats",
+        "image": "/images/teamMembers/dowoo.jpg"
+    },
     {
         "name": "Taimaa Bachi",
         "role": "VP Internal",
         "year": "U2",
-        "major": "Software Eng",
+        "major": "Software Engineering",
         "image": "/images/teamMembers/taima.jpeg"
     },
     {
@@ -38,7 +45,7 @@
         "name": "Madeleine Garnett",
         "role": "VP Sponsorship",
         "year": "U2",
-        "major": "Math and Computer Science",
+        "major": "Computer Sci and Math",
         "image": "/images/teamMembers/madeleine.jpg"
     }
 ]
