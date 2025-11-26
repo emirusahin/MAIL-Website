@@ -14,10 +14,10 @@ export default function Navbar() {
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex">
         <ul className="flex">
-          <Navitem color="black" id="#" label="About"/>
+          <Navitem color="black" id="about" label="About"/>
           <Navitem color="black" id="projects" label="Projects"/>
           <Navitem color="black" id="partners" label="Partners"/>
-          <Navitem color="black" id="#" label="Contact" link="mailto:mcgillailab@gmail.com"/>
+          <Navitem color="black" id="contact" label="Contact" link="mailto:mcgillailab@gmail.com"/>
           <Navitem color="black" id="team" label="Team"/>
         </ul>
       </div>

@@ -11,6 +11,7 @@ export default function Navitem({ label, id, color = "black", link }) {
   const isProjects = id === "projects";
   const isTeam = id === "team";
   const isPartners = id === "partners";
+  const isAbout = id === "about";
 
   /**
    * Determine if this nav item should appear "active".
@@ -19,7 +20,7 @@ export default function Navitem({ label, id, color = "black", link }) {
   const isActive =
     (isProjects && pathname.startsWith("/projects")) ||
     (isTeam && pathname.startsWith("/team")) ||
-    (!isProjects && !isTeam && !isPartners && pathname === "/");
+    (isAbout && pathname === "/");
 
   /**
    * Handles click behavior for each nav item.
