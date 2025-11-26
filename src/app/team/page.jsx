@@ -10,7 +10,7 @@ export default function Team() {
             <div className="flex justify-center my-10">
                 {/* Inner div aligns columns to the left */}
                 <div className="grid grid-cols-4 gap-4">
-                    {teamMembers.slice(0, 9).map((member, index) => (
+                    {teamMembers.map((member, index) => (
                         <div 
                             key={index} 
                             className="bg-gray-800 text-black rounded-lg p-1 w-80">

@@ -18,7 +18,7 @@
         "role": "VP Internal",
         "year": "U2",
         "major": "Software Engineering",
-        "image": "/images/teamMembers/taima.jpeg"
+        "image": "/images/teamMembers/taima.jpg"
     },
     {
         "name": "Skylar Gu",
@@ -49,10 +49,24 @@
         "image": "/images/teamMembers/madeleine.jpg"
     },
     {
+        "name": "Megha Lal",
+        "role": "VP Sponsorship",
+        "year": "U2",
+        "major": "Computer Science",
+        "image": "/images/teamMembers/megha.png"
+    },
+    {
         "name": "Sabrina Qureshi",
         "role": "VP Events",
         "year": "U2",
         "major": "Business Analytics",
         "image": "/images/teamMembers/sabrina.jpg"
+    },
+    {
+        "name": "Anna Hunt-Isaak",
+        "role": "VP Events",
+        "year": "U4",
+        "major": "Cognitive Science",
+        "image": "/images/teamMembers/anna.jpg"
     }
 ]
