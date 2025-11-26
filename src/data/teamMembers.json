@@ -47,5 +47,12 @@
         "year": "U2",
         "major": "Computer Sci and Math",
         "image": "/images/teamMembers/madeleine.jpg"
+    },
+    {
+        "name": "Sabrina Qureshi",
+        "role": "VP Events",
+        "year": "U2",
+        "major": "Business Analytics",
+        "image": "/images/teamMembers/sabrina.jpg"
     }
 ]
