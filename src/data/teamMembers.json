@@ -33,5 +33,12 @@
         "year": "U1",
         "major": "Computer Science",
         "image": "/images/teamMembers/sebastien.jpg"
+    },
+    {
+        "name": "Madeleine Garnett",
+        "role": "VP Sponsorship",
+        "year": "U2",
+        "major": "Math and Computer Science",
+        "image": "/images/teamMembers/madeleine.jpg"
     }
 ]
