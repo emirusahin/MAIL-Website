@@ -28,11 +28,46 @@
         "image": "/images/teamMembers/skylar.jpg"
     },
     {
+        "name": "Ezra Huang",
+        "role": "Project Lead (RL)",
+        "year": "U2",
+        "major": "Honours Math and Comp Sci",
+        "image": "/images/teamMembers/ezra.jpg"
+    },
+    {
+        "name": "Jonathan Lamontagne Kratz",
+        "role": "Project Lead (RL)",
+        "year": "U2",
+        "major": "Honours Comp Sci",
+        "image": "/images/teamMembers/jonny.jpg"
+    },
+    {
+        "name": "Steven Thao",
+        "role": "Project lead",
+        "year": "U2",
+        "major": "Comp Eng",
+        "image": "/images/teamMembers/steven.png"
+    },
+    {
+        "name": "William Kiem Lafond",
+        "role": "Project Lead",
+        "year": "U2",
+        "major": "Comp Sci and Stats",
+        "image": "/images/teamMembers/william.jpg"
+    },
+    {
         "name": "Karen Chen Lai",
         "role": "VP Web",
         "year": "U3",
         "major": "Computer Engineering",
         "image": "/images/teamMembers/karen.jpg"
+    },
+    {
+        "name": "Jacob Leader",
+        "role": "VP Web Dev",
+        "year": "U0",
+        "major": "Comp Sci and Math",
+        "image": "/images/teamMembers/jacob.jpg"
     },
     {
         "name": "Sebastien Renard",
