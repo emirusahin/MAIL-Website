@@ -16,7 +16,8 @@ export default function Team() {
     "Megha Lal",
     "Sabrina Qureshi",
     "Anna Hunt-Isaak",
-    "Kori Zhang"
+    "Kori Zhang",
+    "Gabriel d’Hauteville"
   ];
 
   const exec2024Names = [

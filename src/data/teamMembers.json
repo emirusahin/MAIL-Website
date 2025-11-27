@@ -57,7 +57,7 @@
     },
     {
         "name": "Karen Chen Lai",
-        "role": "VP Web",
+        "role": "VP Web Dev",
         "year": "U3",
         "major": "Computer Engineering",
         "image": "/images/teamMembers/karen.jpg"
@@ -110,5 +110,12 @@
         "year": "U3",
         "major": "Bioengineering",
         "image": "/images/teamMembers/kori.jpg"
+    },
+    {
+        "name": "Gabriel d’Hauteville",
+        "role": "VP Outreach",
+        "year": "U2",
+        "major": "Computer Sci and Math",
+        "image": "/images/teamMembers/gabriel.png"
     }
 ]
