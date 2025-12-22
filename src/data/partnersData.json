@@ -18,5 +18,15 @@
         "name": "NebulaBlock",
         "image": "/images/nebula.png",
         "website": "https://nebulablock.com"
+    },
+        {
+        "name": "ALLsocket",
+        "image": "/images/allsocket_logo.png",
+        "website": "https://www.allsocket.com/"
+    },
+        {
+        "name": "Ultra I&C",
+        "image": "/images/ultra_i&c_logo.png",
+        "website": "https://www.ultra-ic.com/"
     }
 ]

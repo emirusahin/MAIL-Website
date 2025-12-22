@@ -5,7 +5,7 @@ import "animate.css";
 
 export default function PartnersSection() {
   return (
-    <section id="partners" className="py-8">
+    <section id="partners" className="py-8 overflow-x-hidden">
       <AnimateOnViewWrapper>
         {/* Same title format as Projects */}
         <h1 className="pb-6 pl-8 font-Inter text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight">
@@ -14,8 +14,7 @@ export default function PartnersSection() {
       </AnimateOnViewWrapper>
 
       <AnimateOnViewWrapper>
-        {/* Same horizontal carousel as Projects */}
-        <div id="partners" className="carousel w-full space-x-6 p-4 pl-8 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+        <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-4 pl-8">
           {partnersData.map((p) => {
             const key = `${p.name}-${p.website}`; // unique key
             return (
@@ -24,11 +23,11 @@ export default function PartnersSection() {
                 href={p.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="carousel-item group block"
+                className="group block flex flex-col items-center"
                 aria-label={`Open ${p.name} website`}
               >
                 {/* Partner logo without border or rounded corners */}
-                <div className="relative w-64 h-40 flex items-center justify-center overflow-hidden">
+                <div className="relative w-full aspect-[4/3] flex items-center justify-center overflow-hidden">
                   <Image
                     src={p.image}
                     alt={p.name}
