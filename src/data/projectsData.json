@@ -9,8 +9,16 @@
   },
   {
     "clickable": true,
+    "title": "Age of Acquisition",
+    "date": "In Progress",
+    "image": "/images/projects/aoa.png",
+    "description": "",
+    "url": "https://raw.githubusercontent.com/McGill-AI-Lab/age-of-acquisition/main/README.md"
+  },
+  {
+    "clickable": true,
     "title": "News Bias Model",
-    "date": "",
+    "date": "Backlog",
     "image": "/images/projects/news-bias.png",
     "description": "",
     "url": "https://raw.githubusercontent.com/McGill-AI-Lab/news-bias-w2v/refs/heads/main/README.md"
