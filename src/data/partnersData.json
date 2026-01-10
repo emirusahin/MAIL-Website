@@ -1,32 +1,32 @@
 [
         {
         "name": "NebulaBlock",
-        "image": "/images/nebula.png",
+        "image": "/images/sponsors/nebula.png",
         "website": "https://nebulablock.com"
     },
         {
         "name": "Mill-Max Manufacturing",
-        "image": "/images/mill_max_logo.png",
+        "image": "/images/sponsors/mill_max_logo.png",
         "website": "https://www.mill-max.com"
     },
         {
         "name": "Analog Devices",
-        "image": "/images/analog_devices_logo.png",
+        "image": "/images/sponsors/analog_devices_logo.png",
         "website": "https://www.analog.com/en/index.html"
     },
         {
         "name": "Espressif Systems",
-        "image": "/images/espressif_logo.png",
+        "image": "/images/sponsors/espressif_logo.png",
         "website": "https://www.espressif.com"
     },
         {
         "name": "ALLsocket",
-        "image": "/images/allsocket_logo.png",
+        "image": "/images/sponsors/allsocket_logo.png",
         "website": "https://www.allsocket.com/"
     },
         {
         "name": "Ultra I&C",
-        "image": "/images/ultra_i&c_logo.png",
+        "image": "/images/sponsors/ultra_i&c_logo.png",
         "website": "https://www.ultra-ic.com/"
     }
 ]
