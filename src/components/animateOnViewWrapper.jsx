@@ -1,5 +1,4 @@
 "use client"; 
-import { useEffect } from 'react';
 import useElementVisibility from '@/app/hooks/visibilityHook';
 import 'animate.css';
 

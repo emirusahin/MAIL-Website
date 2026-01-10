@@ -5,25 +5,35 @@ const useElementVisibility = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            if (elementRef.current) {
-                const rect = elementRef.current.getBoundingClientRect();
-                const isCurrentlyVisible = (
-                  rect.top < window.innerHeight // only need to check if the top of the element is visable, bc scroll will only go down
-              );
+        // Use IntersectionObserver instead of scroll + getBoundingClientRect.
+        // If already visible, no need to observe
+        if (isVisible) return;
 
-                // so it only animates once
+        const node = elementRef.current;
+        if (!node) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const entry = entries[0];
+                const isCurrentlyVisible = entry.isIntersecting;
+
+                //it only animates once
                 if (isCurrentlyVisible && !isVisible) {
                     setIsVisible(true);
+                    observer.unobserve(node); // stop observing once it becomes visible
+                    observer.disconnect();
                 }
+            },
+            {
+                root: null,
+                threshold: 0,
             }
-        };
+        );
 
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Initial check on mount
+        observer.observe(node);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            observer.disconnect();
         };
     }, [isVisible]);
 
