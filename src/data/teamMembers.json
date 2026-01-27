@@ -1,7 +1,7 @@
 [
     {
         "name": "Emir Sahin",
-        "role": "President",
+        "role": "Co-President",
         "year": "U3",
         "major": "Comp Sci and Psychology",
         "image": "/images/teamMembers/emir.jpg"
@@ -15,7 +15,7 @@
     },
     {
         "name": "Taimaa Bachi",
-        "role": "VP Internal",
+        "role": "Co-President",
         "year": "U2",
         "major": "Software Engineering",
         "image": "/images/teamMembers/taima.jpg"
