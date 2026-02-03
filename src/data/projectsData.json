@@ -17,6 +17,14 @@
   },
   {
     "clickable": true,
+    "title": "MedMNIST Semi-Supervised Learning",
+    "date": "In Progress",
+    "image": "/images/projects/ssl.png",
+    "description": "edical datasets.",
+    "url": "https://raw.githubusercontent.com/dk1028/medmnist-ssl/main/README.md"
+  },
+  {
+    "clickable": true,
     "title": "News Bias Model",
     "date": "Backlog",
     "image": "/images/projects/news-bias.png",
