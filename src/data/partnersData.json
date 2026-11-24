@@ -33,5 +33,10 @@
         "name": "Cable Sales Canada",
         "image": "/images/sponsors/cable_sales_canada_logo.png",
         "website": "https://www.cablesalescanada.com/"
+    },
+    {
+        "name": "PN Labs",
+        "image": "/images/sponsors/pn_labs_logo.png",
+        "website": "https://pnlabs.ca/"
     }
 ]
